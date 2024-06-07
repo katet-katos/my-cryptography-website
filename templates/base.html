@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>{{title}}</title>
+    </head>
+    <body style="background-color: #abb3a9;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" style="margin-right: 20%;">Методы криптографии</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Симметричные
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/AES">AES</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/DES">DES</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/Blowfish">Blowfish</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/Chacha20">Chacha20</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/caesar">Шифр Цезаря</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Асимметричные
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/Diffie_Hellman">Diffie-Hellman</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/RSA">RSA</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/ElGamal">ElGamal</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/ECDSA">ECDSA</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/Points">Points</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Хеширование
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/MD5">MD5</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/SHA1">SHA1</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/SHA224">SHA224</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/SHA256">SHA256</a></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8080/SHA384">SHA384</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8080/eds">ЭЦП</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div style="margin-top: 5%; margin-left: 5%; margin-right: 5%;">
+            {% block content %}{% endblock %}
+          </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
